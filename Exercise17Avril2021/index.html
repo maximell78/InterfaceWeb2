@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!-- Programmé par : Maxime Lacroix-Lemire -->
+<!-- Dernière Mise À  Jour :  2021/04/17 -->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="offset-2 col-8 text-center card pt-3 pb-3">
+                    <form>
+                        <label for="nom">Inscrivez le nom du chat : </label>
+                        <input type="text" name="nom" id="nom"> </br>
+                        <label for="age">Quel est l'âge du chat : </label>
+                        <input type="number" name="age" id="age"> </br>
+                        <label for="ddn">Quel est la date de naissance du chat : </label>
+                        <input type="date" name="ddn" id="ddn"> </br>
+                        <label for="poids">Quel est le poids du chat : </label>
+                        <input type="number" name="poids" id="poids"> </br>                        
+                        Vacciné : <label for="vaccinOui">Oui : </label> 
+                        <input type="checkbox" name="vaccinOui" id="vaccinOui">
+                        <label for="vaccinNon">Non : </label>
+                        <input type="checkbox" name="vaccinNon" id="vaccinNon"> </br>
+                        <label for="couleur">Quel est la couleur du chat : </label>
+                        <input type="text" name="couleur" id="couleur"> </br>
+                        <label for="domestique">Domestique : </label>
+                        <input type="radio" name="domestique" id="domestique">
+                        <label for="race">Racé : </label>
+                        <input type="radio" name="race" id="race"> </br>
+                        <label for="lieu">Lieu de naissance : </label>
+                        <input type="text" name="lieu" id="lieu"> </br>
+                        <label for="photo">Veuillez importer vos photos ici : </label>
+                        <input type="file" name="photo" id="photo" multiple> </br>
+                        <label for="email">Inscrire votre courriel : </label>
+                        <input type="email" name="email" id="email"> </br>
+                        <label for="telephone">Inscrivez votre numéro de téléphone</label>
+                        <input type="tel" name="telephone" id="telephone" pattern="[0-9]{4}-[0-9]{3}--[0-9]/[A-Z]"> </br></br>
+                        <input type="button" value="Soumettre" onclick="validationFormulaire()">
+                        <input type="reset" value="Réinitialiser"></br>
+                        <p class="pt-5" id="erreur"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="javascript/java.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</html>

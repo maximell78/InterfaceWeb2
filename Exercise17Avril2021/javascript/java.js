@@ -1,39 +1,30 @@
+// java.js
+// Programmé par : Maxime Lacroix-Lemire
+// Dernière Mise À  Jour :  2021/04/24
+
 function validationFormulaire(){
-    var isValid = true;
+    var nom = document.forms["monFormulaire"]["nom"].value;
+    var age = document.forms["monFormulaire"]["age"].value;
     var error = "";
-
-    //Test Nom du Chat [a-z - A-Z ]
-    if ( !document.getElementById("nom").value && !document.getElementById("nom").value.match(/([a-zA-z])/))
-    {
-        isValid =false;
-        error = error + "Nom du chat invalide </br> ";
-    }
-
-    //Test de l'âge du chat
-    if ( !document.getElementById("age").value.match(/([0-9])/))
-    {
+    var isValid = true;
+    if(nom =="" || nom >=0 ){
         isValid = false;
-        error = error + "L'âge du chat est invalide </br> "
+        error = error + "Le nom est invalide </br>";
     }
 
-    if ( document.getElementById("age").value > 40){
+    if (age =="" || age > 40){
         isValid = false;
-        error = error + "L'âge du chat est invalide </br> "
+        error = error + "L'age est invalide";
     }
 
-    //Test Email [a-z - A-Z ]
-    if ( !document.getElementById("email").value.match(/([a-z]@[a-z].[a-z])/)
-    ) {
-    isValid = false;
-    error = error + "Email non valide </br> ";
+    if (poids =="" || poids > 40){
+        isValid = false;
+        error = error + "L'age est invalide";
     }
 
-    //Affichage du resultat de la validation
     if (isValid) {
-    //paiement est un succes
-    alert("Message envoyé");
+        alert("Good Good")
     } else {
-    //un erreur c'est produite
-    document.getElementById("erreur").innerHTML = error;
+        document.getElementById("erreur").innerHTML = error;
     }
 }

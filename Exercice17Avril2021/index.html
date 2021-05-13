@@ -1,0 +1,112 @@
+<!-- index.html -->
+<!-- Programmé par : Maxime Lacroix-Lemire -->
+<!-- Dernière Mise À  Jour :  2021/04/24 -->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <header>
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Chat le plus lourd
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Omar tient le record du chat le plus gros et le plus grand du monde. Ce somptueux Maine Coon australien roux mesure plus d'1m20 et pèse 15 kilos, une plume ! Habituellement, le poids d'un Maine Coon oscille entre 5 et 10 kilos.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Chat le plus vieux
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Le record de longévité d'un chat est détenu par Creme Puff, une chatte du Texas, morte en 2005 à l'âge de 38 ans et trois jours. Son maître Jake Perry, a aussi été le maître de Granpa, mort en 1998 à l'âge de... 34 ans!
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Chat le plus long
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Ludo, de son petit nom, est un maine coon. Une race de chats bien connue pour sa grande taille. Mais cette boule de poils ci, originaire de Wakefield, dans le West Yorkshire, en Angleterre, a des proportions exceptionnelles : 118,33 centimètres de long, rien que ça !
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <section>
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="offset-2 col-8 text-center card pt-3 pb-3">
+                    <form name="monFormulaire" onsubmit="validationFormulaire()">
+                        <label for="nom">Inscrivez le nom du chat : </label>
+                        <input type="text" name="nom" id="nom" placeholder="Ti-min" maxlength="50" required> </br>
+                        <label for="age">Quel est l'âge du chat : </label>
+                        <input type="number" name="age" id="age" required> </br>
+                        <label for="ddn">Quel est la date de naissance du chat : </label>
+                        <input type="date" name="ddn" id="ddn" required> </br>
+                        <label for="poids">Quel est le poids du chat : </label>
+                        <input type="number" name="poids" id="poids" required> </br>                        
+                        <p>Vacciné :</p>
+                        <label for="vaccinOui">Oui : </label> 
+                        <input type="checkbox" name="vaccinOuiNon" id="vaccinOui">
+                        <label for="vaccinNon">Non : </label>
+                        <input type="checkbox" name="vaccinOuiNon" id="vaccinNon"> </br>
+                        <label for="couleur">Quel est la couleur du chat : </label>
+                        <input type="text" name="couleur" id="couleur" placeholder="Noir" required> </br>
+                        <label for="domestique">Domestique : </label>
+                        <input type="radio" name="domestiqueRace" id="domestique">
+                        <label for="race">Racé : </label>
+                        <input type="radio" name="domestiqueRace" id="race"> </br>
+                        <label for="lieu">Lieu de naissance : </label>
+                        <input type="text" name="lieu" id="lieu" placeholder="Montreal" required> </br>
+                        <label for="photo">Veuillez importer vos photos ici : </label>
+                        <input type="file" name="photo" id="photo" multiple> </br>
+                        <label for="email">Inscrire votre courriel : </label>
+                        <input type="email" name="email" id="email" placeholder="courriel@site.ca" required> </br>
+                        <label for="telephone">Inscrivez votre numéro de téléphone</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="5555-555--5/G" required> </br></br>
+                        <div class="pt-4">
+                            <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+                            <button type="submit" class="btn btn-primary">Soumettre le formulaire</button>
+                        </div>                        
+                        <p class="pt-5" id="erreur"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-center"> Copyright © Gestion Web O'Max - Tous droits réservés. </p>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="javascript/java.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</html>

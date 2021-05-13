@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!-- Programmé par : Maxime Lacroix-Lemire -->
+<!-- Dernière Mise À  Jour :  2021/05/01 -->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container-fuid">
+            <div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--<section>
+        <div class="container-fuid">
+            <div class="row">
+                <div class="offset-3 col-3">                    
+                    <img src="media/IronMan.jpg" alt="IronMan">
+                </div>
+                <div class="offset-2 col-3 card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nibh ac neque suscipit gravida. Vestibulum pulvinar felis et scelerisque tempor. Nullam aliquam rutrum mauris, sit amet congue mi ultricies et. Aliquam interdum posuere viverra. Ut ac neque sapien. Donec consequat sagittis congue. Nulla eu rhoncus massa, in tempor metus. Aenean ac dapibus mauris. Vestibulum eu sollicitudin est, non dictum velit. Pellentesque nec venenatis ipsum, at consectetur lacus. Integer semper odio vel dapibus scelerisque. Morbi convallis quis quam quis sagittis. Pellentesque scelerisque pulvinar enim, vel dictum augue imperdiet sed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fuid">
+            <div class="row">
+                <div class="offset-3 col-8">
+                    <img src="media/hulk.jpg" alt="Hulk">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fuid">
+            <div class="row">
+                <div class="offset-3 col-8" data-aos="fade-in" data-aos-duration="4000">
+                    <img src="media/captain.jpg" alt="Captain America">
+            </div>
+        </div>
+    </section> -->
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="anime-master/lib/anime.min.js"></script>
+    <script src="javascript/java.js"></script>
+    <script>
+    let animation = anime({
+        targets: 'div',
+  translateX: 240,
+  delay: 1000,
+  easing: 'easeInOutCirc',
+  update: function(anim) {
+    progressLogEl.value = 'progress : ' + Math.round(anim.progress) + '%';
+    beginLogEl.value = 'began : ' + anim.began;
+    completeLogEl.value = 'completed : ' + anim.completed;
+  },
+  begin: function(anim) {
+    beginLogEl.value = 'began : ' + anim.began;
+  },
+  complete: function(anim) {
+    completeLogEl.value = 'completed : ' + anim.completed;
+  }
+});
+    </script>
+</body>
+</html>

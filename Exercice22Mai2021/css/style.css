@@ -1,0 +1,30 @@
+/* style.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/05/22 */
+
+/* Card */
+
+.card__header{
+    background-color: rgb(218, 86, 108);
+    padding: 10%;    
+}
+
+.card-nav__list{
+    background-color: rgb(128, 128, 128,0.4);
+    border-radius: 8%;
+    color: black;
+}
+
+.card-nav__item--bold{    
+    font-weight: bold;    
+}
+
+.card__btn--turquoise{
+    background-color: rgb(46, 168, 156);
+    color: white;   
+}
+
+.card__btn--hover:hover{
+    background-color: coral;
+    color: white;
+}

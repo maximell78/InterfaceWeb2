@@ -1,0 +1,56 @@
+/* styleOld.css */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/05 */
+
+.grosseur{
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 20%;
+}
+
+.bg-bleuPale{
+    background-color: #9BD3FC !important;   
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+  }
+
+.btn-space {
+    margin-right: 10px !important;
+}
+
+.btn-grosseur{
+    display: block !important;
+    margin: auto !important;
+}
+
+.btn-bordure{
+    border: none;
+}
+
+.aGauche{
+    margin-left: 2% !important;
+}
+
+.enBas{
+    margin-top: 2% !important;
+}
+
+ul{
+    margin-bottom: 0 !important;
+}
+
+.card2{
+    padding-bottom: 2em !important;
+}
+
+body{
+    margin-top: 1em !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}

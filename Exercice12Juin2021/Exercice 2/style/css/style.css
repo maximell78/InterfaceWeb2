@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* style.sass */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/12 */
+.img__nord {
+  background-image: url(../../image/nord.svg);
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.img__sud {
+  background-image: url(../../image/sud.svg);
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.img__est {
+  background-image: url(../../image/est.svg);
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.img__ouest {
+  background-image: url(../../image/ouest.svg);
+  padding: 15%;
+  background-repeat: no-repeat;
+}

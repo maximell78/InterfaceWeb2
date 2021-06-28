@@ -1,0 +1,24 @@
+/* style.sass */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/12 */
+
+@mixin position($position-gauche: true)
+    @if $position-gauche
+        padding: 15%
+        width: 15rem
+        background-repeat: no-repeat
+        float: left
+    @else
+        padding: 15%
+        width: 15rem
+        background-repeat: no-repeat
+        float: right
+    
+.img__gauche
+    @include position($position-gauche: true)
+
+.img__droite
+    @include position($position-gauche: false)
+
+.text-center
+    text-align: center

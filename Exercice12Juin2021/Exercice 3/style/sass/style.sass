@@ -1,0 +1,14 @@
+/* style.sass */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/12 */
+
+$largeurs: ("un": 1rem, "deux": 2rem, "trois": 3rem, "quatre": 4rem, "cinq": 5rem, "six": 6rem, "sept": 7rem, "huit": 8rem, "neuf": 9rem, "dix": 10rem)
+
+@each $largeur, $compteur in $largeurs
+    .width__
+        &#{$largeur}
+            background-color: green
+            width: $compteur
+            padding: 15%
+            background-repeat: no-repeat
+     

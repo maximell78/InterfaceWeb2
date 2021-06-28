@@ -1,0 +1,12 @@
+@function calcul($mot, $lettre)  
+    
+    $counter = 0
+        @for $mot from 0 str-length($mot)
+            @if str-slice($mot, $lettre, $lettre)==$lettre
+                $counter: $counter+1
+    
+        @return width: $counter
+
+
+img
+    width: calcul(anana, a)

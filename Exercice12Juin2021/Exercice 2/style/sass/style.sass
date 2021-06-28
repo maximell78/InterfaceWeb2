@@ -1,0 +1,13 @@
+/* style.sass */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/12 */
+
+
+$boussole: ("nord": url(../../image/nord.svg), "sud": url(../../image/sud.svg), "est": url(../../image/est.svg), "ouest": url(../../image/ouest.svg))
+
+@each $direction, $compteur in $boussole
+    .img__
+        &#{$direction}
+            background-image: $compteur
+            padding: 15%
+            background-repeat: no-repeat

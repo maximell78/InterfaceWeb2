@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* style.sass */
+/* Programmé par : Maxime Lacroix-Lemire */
+/* Dernière Mise À  Jour :  2021/06/12 */
+.width__un {
+  background-color: green;
+  width: 1rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__deux {
+  background-color: green;
+  width: 2rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__trois {
+  background-color: green;
+  width: 3rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__quatre {
+  background-color: green;
+  width: 4rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__cinq {
+  background-color: green;
+  width: 5rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__six {
+  background-color: green;
+  width: 6rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__sept {
+  background-color: green;
+  width: 7rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__huit {
+  background-color: green;
+  width: 8rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__neuf {
+  background-color: green;
+  width: 9rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
+
+.width__dix {
+  background-color: green;
+  width: 10rem;
+  padding: 15%;
+  background-repeat: no-repeat;
+}
